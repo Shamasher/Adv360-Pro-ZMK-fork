@@ -60,7 +60,7 @@
         layer_fn {
             bindings = <
      &kp F1      &kp F2     &kp F3      &kp F4       &kp F5  &kp F6             &tog 1                                                     &mo 3                   &kp F7                   &kp F8          &kp F9                    &kp F10                    &kp F11     &kp F12
- &kp C_NEXT      &trans     &trans      &trans       &trans  &trans              &none                                                     &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)      &trans
+ &kp C_NEXT      &trans     &trans      &trans       &trans  &trans              &none                                                     &none  &mt LEFT_GUI LEFT_ARROW  &mt LEFT_ALT LEFT_ARROW    &kp UP_ARROW  &mt RIGHT_ALT RIGHT_ARROW  &mt RIGHT_GUI RIGHT_ARROW      &trans
      &trans      &trans     &trans      &trans       &trans  &trans              &none  &trans  &trans                  &trans  &trans     &none                   &trans           &kp LEFT_ARROW  &kp DOWN_ARROW            &kp RIGHT_ARROW                     &trans      &trans
  &kp LSHIFT  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans              &none   &none  &trans   &none   &none  &trans   &none     &none                   &trans                   &trans    &kp C_VOL_DN               &kp C_VOL_UP                     &trans  &kp RSHIFT
      &trans      &trans     &trans      &trans       &trans                    &kp DEL  &trans  &trans                  &trans  &trans  &kp C_PP                                            &trans          &trans                     &trans                     &trans      &trans
