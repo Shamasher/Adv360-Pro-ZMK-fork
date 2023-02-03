@@ -59,7 +59,7 @@
             bindings = <
       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5  &kp F6             &tog 1                                                                  &mo 3              &kp F7              &kp F8          &kp F9              &kp F10              &kp F11     &kp F12
  &kp LG(TAB)     &trans     &trans     &trans     &trans  &trans              &none                                                                  &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)      &trans
- &kp LG(TAB)     &trans     &trans     &trans     &trans  &trans              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
+ &kp LG(TAB)  &kp LG(A)     &trans     &trans     &trans  &trans              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
   &kp LSHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans              &none   &none  &trans   &none   &none  &kp LS(LG(RBKT))      &none     &none              &trans              &trans    &kp C_VOL_DN         &kp C_VOL_UP               &trans  &kp RSHIFT
       &trans     &trans     &trans     &trans     &trans          &kp LA(BACKSPACE)  &trans  &trans                            &trans  &kp EQUAL  &kp C_PP                              &kp C_PREV      &kp C_NEXT               &trans               &trans      &trans
             >;
