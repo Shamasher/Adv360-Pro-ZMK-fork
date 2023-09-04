@@ -46,7 +46,7 @@
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5    &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T     &none                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC      &bhm LGUI A     &bhm LCTRL S     &bhm LALT D      &shm LSHIFT F   &kp G     &none  &kp LGUI  &kp LALT                  &kp LGUI  &kp RCTRL      &none   &kp H   &shm RSHIFT J      &bhm LALT K     &bhm RCTRL L  &bhm RGUI SEMI    &kp SQT
- &kp LSHIFT      &kp Z     &kp X     &kp C      &kp V   &kp B     &none      &none  &kp HOME   &none   &none  &kp PG_DN      &none      &none   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHIFT
+ &kp LSHIFT      &kp Z     &kp X     &kp C      &kp V   &kp B                      &kp HOME                    &kp PG_DN &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHIFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC      &mo 1  &kp EQUAL                   &kp LGUI  &lt 2 ENTER  &kp SPACE          &kp LBRC   &kp RBRC  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
@@ -56,7 +56,7 @@
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &none                                                                        &none &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
         &trans  &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &none           &kp LCTRL &kp LALT                  &kp LGUI  &kp RCTRL           &none &kp N6 &kp N7 &kp N8  &kp N9 &kp N0 &trans
-        &trans  &kp ESC   &kp PLUS &kp MINUS   &kp EQUAL   &kp UNDER         &none    &none     &kp HOME &none &none &kp PG_UP &none     &none           &kp LBKT &kp RBKT  &kp BSLH     &kp LBRC &kp RBRC &kp TILDE
+        &trans  &kp ESC   &kp PLUS &kp MINUS   &kp EQUAL   &kp UNDER&kp HOME    &kp PG_UP &kp LBKT                  &kp RBKT  &kp BSLH     &kp LBRC &kp RBRC &kp TILDE
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &trans &trans &trans                    &trans &trans &trans              &kp UP     &kp DOWN     &kp LBKT    &kp RBKT        &mo 2
       >;
         };
@@ -66,7 +66,7 @@
       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5  &kp F6             &tog 1                                                                  &mo 3              &kp F7              &kp F8          &kp F9              &kp F10              &kp F11     &kp F12
  &kp LG(TAB)     &kp LS(LA(LC(LG(Q))))     &kp LS(LA(LC(LG(W))))     &kp LS(LA(LC(LG(E))))     &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))              &none                                                                  &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)      &trans
  &kp LG(TAB)  &kp C_PREV  &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
-  &kp LSHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans              &none   &none  &trans   &none   &none  &kp LS(LG(RBKT))      &none     &none              &trans              &trans    &trans         &trans               &trans  &kp RSHIFT
+  &kp LSHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans              &trans                   &kp LS(LG(RBKT))              &trans              &trans    &trans         &trans               &trans  &kp RSHIFT
       &trans     &trans     &trans     &trans     &trans          &kp LA(BACKSPACE)  &trans  &trans                            &trans  &kp EQUAL  &trans                              &trans      &trans               &trans               &trans      &trans
             >;
         };
@@ -76,7 +76,7 @@
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                   &none                                                                              &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none
   &none         &none         &none         &none         &none         &none             &bootloader                                                                         &bootloader         &none         &none         &none         &none         &none   &none
   &none         &none         &none         &none         &none         &none  &rgb_ug RGB_MEFS_CMD 5  &bt BT_CLR   &none                  &bt BT_CLR  &bt BT_CLR  &rgb_ug RGB_MEFS_CMD 5         &none         &none         &none         &none         &none   &none
-  &none         &none         &none         &none         &none         &none                   &none       &none   &none   &none   &none       &none       &none                   &none         &none         &none         &none         &none         &none   &none
+  &none         &none         &none         &none         &none         &none                                        &none                  &none             &none         &none         &none         &none         &none   &none
   &none         &none         &none    &bl BL_INC    &bl BL_DEC                       &rgb_ug RGB_TOG  &bl BL_TOG   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG                  &bl BL_INC    &bl BL_DEC         &none         &none   &none
             >;
         };
