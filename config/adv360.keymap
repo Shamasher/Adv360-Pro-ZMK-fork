@@ -49,7 +49,7 @@
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T     &tog 4                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
    &kp ESC      &bhm LGUI A     &bhm LCTRL S     &bhm LALT D      &shm LSHIFT F   &kp G     &none  &kp LGUI  &kp LALT                  &kp LGUI  &kp RCTRL      &none   &kp H   &shm RSHIFT J      &bhm LALT K     &bhm RCTRL L  &bhm RGUI SEMI    &kp SQT
  &kp LSHIFT      &kp Z     &kp X     &kp C      &kp V   &kp B                      &kp HOME                    &kp PG_DN &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHIFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC      &mo 1  &kp EQUAL                   &kp LGUI  &lt 2 ENTER  &kp SPACE          &kp LBRC   &kp RBRC  &kp LBKT  &kp RBKT      &mo 2
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC      &mo 1  &kp SQT                   &kp BSLH  &lt 2 ENTER  &kp SPACE          &kp LBRC   &kp RBRC  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
@@ -66,8 +66,8 @@
         layer_fn {
             bindings = <
       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5  &kp F6             &tog 1                                                                  &mo 3              &kp F7              &kp F8          &kp F9              &kp F10              &kp F11     &kp F12
- &kp LG(TAB)     &kp LS(LA(LC(LG(Q))))     &kp LS(LA(LC(LG(W))))     &kp LS(LA(LC(LG(E))))     &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))              &none                                                                  &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)      &trans
- &kp LG(TAB)   &bhm LGUI C_PREV   &bhm LCTRL C_NEXT   &bhm LALT C_VOL_DN   &shm LSHIFT C_VOL_UP &kp C_PP              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
+ &kp LG(TAB)     &kp TAB     &kp LS(LA(LC(LG(W))))     &kp LS(LA(LC(LG(E))))     &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))              &none                                                                  &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)      &trans
+ &kp LG(TAB)   &bhm LGUI ESC   &bhm LCTRL C_NEXT   &bhm LALT C_VOL_DN   &shm LSHIFT C_VOL_UP &kp C_PP              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
   &kp LSHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans              &trans                   &kp LS(LG(RBKT))              &trans              &trans    &trans         &trans               &trans  &kp RSHIFT
       &trans     &trans     &trans     &trans     &trans          &kp LA(BACKSPACE)  &trans  &trans                            &trans  &kp EQUAL  &trans                              &trans      &trans               &trans               &trans      &trans
             >;
