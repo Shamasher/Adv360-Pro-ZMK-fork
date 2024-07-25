@@ -49,6 +49,26 @@
           require-prior-idle-ms = <100>;
           bindings = <&kp>, <&kp>;
       };
+
+      lh_pht: left_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <10 11 12 13 14 15 16 17 18 19>;    // <---[[right-hand keys]]
+        };
+
+        rh_pht: right_positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9>;    // <---[[left-hand keys]]
+        };
     };
 
     keymap {
@@ -58,7 +78,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5    &tog 1                                                                 &mo 3  &kp N6  &kp N7     &kp N8    &kp N9    &kp N0  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T     &tog 4                                                                 &none   &kp Y   &kp U      &kp I     &kp O     &kp P   &kp BSLH
-   &kp ESC      &bhm LGUI A     &bhm LCTRL S     &bhm LALT D      &shm LSHIFT F   &kp G     &none  &kp LGUI  &kp LALT                  &kp LGUI  &kp RCTRL      &none   &kp H   &shm RSHIFT J      &bhm LALT K     &bhm RCTRL L  &bhm RGUI SEMI    &kp SQT
+   &kp ESC      &lh_pht LGUI A     &lh_pht LCTRL S     &lh_pht LALT D      &lh_pht LSHIFT F   &kp G     &none  &kp LGUI  &kp LALT                  &kp LGUI  &kp RCTRL      &none   &kp H   &rh_pht RSHIFT J      &rh_phtLALT K     &rh_pht RCTRL L  &rh_pht RGUI SEMI    &kp SQT
  &kp LSHIFT      &kp Z     &kp X     &kp C      &kp V   &kp B                      &kp HOME                    &kp PG_DN &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RSHIFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC      &mo 1  &kp SQT                   &kp BSLH  &lt 2 ENTER  &kp SPACE          &kp LBRC   &kp RBRC  &kp LBKT  &kp RBKT      &mo 2
             >;
