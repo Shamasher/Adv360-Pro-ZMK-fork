@@ -76,17 +76,17 @@
         &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &trans                                                                       &mo 3 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp KP_DIVIDE &kp KP_MULTIPLY &kp MINUS
         &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &none                                                                        &none &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &trans
         &trans  &kp N1   &kp N2 &kp N3   &kp N4   &kp N5        &none           &kp LCTRL &kp LALT                  &kp LGUI  &kp RCTRL           &none &kp N6 &kp N7 &kp N8  &kp N9 &kp N0 &trans
-        &trans  &kp ESC   &kp PLUS &kp MINUS   &kp EQUAL   &kp UNDER&kp HOME    &kp PG_UP &kp BSLH                  &kp LBKT  &kp  RBKT     &kp LBRC &kp RBRC &kp TILDE
+        &trans  &kp ESC   &kp PLUS &kp MINUS   &kp EQUAL   &kp UNDER  &kp HOME    &kp PG_UP &kp BSLH                  &kp LBKT  &kp  RBKT     &kp LBRC &kp RBRC &kp TILDE
         &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &trans &trans &trans                    &trans &trans &trans              &kp UP     &kp DOWN     &kp LBKT    &kp RBKT        &mo 2
       >;
     };
     fn {
       bindings = <
-      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5  &kp F6             &tog 1                                                                  &mo 3              &kp F7              &kp F8          &kp F9              &kp F10              &kp F11     &kp F12
- &kp LG(TAB)     &kp TAB     &kp LS(LA(LC(LG(W))))     &kp LS(LA(LC(LG(E))))     &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))              &none                                                                  &none  &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)    &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)      &trans
- &kp LG(TAB)   &bhm LGUI ESC   &bhm LCTRL C_NEXT   &bhm LALT C_VOL_DN   &shm LSHIFT C_VOL_UP &kp C_PP              &none  &trans  &trans                  &kp LS(LG(LBKT))     &trans     &none              &trans      &kp LEFT_ARROW  &kp DOWN_ARROW      &kp RIGHT_ARROW               &trans      &trans
-  &kp LSHIFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans              &trans                   &kp LS(LG(RBKT))              &trans              &trans    &trans         &trans               &trans  &kp RSHIFT
-      &trans     &trans     &trans     &trans     &trans          &kp LA(BACKSPACE)  &trans  &trans                            &trans  &kp EQUAL  &trans                              &trans      &trans               &trans               &trans      &trans
+        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5  &kp F6  &tog 1                                               &mo 3   &kp F7   &kp F8   &kp F9   &kp F10   &kp F11     &kp F12
+        &trans &trans &trans &trans &trans &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
+        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
     mod {
